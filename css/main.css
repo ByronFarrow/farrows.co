@@ -27,20 +27,20 @@ body {
   grid-template: 1fr 1fr / 1fr 1fr;
 }
 
-.byron {
-  .grid-area: 1 / 1 / 2 / 2;
+p.byron {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
-.lina {
-  .grid-area: 1 / 2 / 2 / 3;
+p.lina {
+  grid-area: 1 / 2 / 2 / 3;
 }
 
-.edmund {
-  .grid-area: 2 / 1 / 3 / 2;
+p.edmund {
+  grid-area: 2 / 1 / 3 / 2;
 }
 
-.iona {
-  .grid-area: 2 / 2 / 3 / 3;
+p.iona {
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 
