@@ -28,7 +28,7 @@ The GRID
   grid-template: 1fr 1fr / 1fr 1fr;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .box {
@@ -36,6 +36,9 @@ The GRID
   color: black;
   border-radius: 5px;
   border: 2px dodgerblue solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
 }
 
 p.byron {
