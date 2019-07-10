@@ -1,0 +1,175 @@
+/**********************************
+GENERAL
+**********************************/
+* {
+  border: 1px solid red;
+}
+
+body {
+  line-height: 1.6;
+  width: 70%;
+  margin: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/**********************************
+IMAGE
+**********************************/
+#image-section {
+  box-sizing: border-box;
+  margin: 2.5%;
+  height: 700px;
+  max-width: 45%;
+  background: linear-gradient(0deg, #fff, transparent),
+              steelblue url('../img/the family web bw.jpeg') no-repeat center;
+  background-size: cover;
+  float:left;
+}
+
+@media (max-width: 480px) {
+  #image-section {
+    max-width: 100%;
+    height: 480px;
+    float: none;}
+}
+
+
+/**********************************
+NAVIGATION
+**********************************/
+
+#links {
+  display: inline;
+  margin: 2.5%;
+  max-width: 45%;
+  font-size: 5em;
+  float: right;
+}
+
+@media (max-width: 480px) {
+  #links {
+    display: block;
+    max-width: 100%;
+    font-size: 2em;
+    float: none;
+  }
+}
+
+/**********************************
+FOOTER
+**********************************/
+
+footer {
+  float: none;
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+/**********************************
+PAGE: PORTFOLIO
+**********************************/
+
+
+
+
+/**********************************
+PAGE: ABOUT
+**********************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%
+}
+
+
+
+/**********************************
+PAGE: CONTACT
+**********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png')
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png')
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png')
+}
+
+
+
+/**********************************
+COLOURS
+**********************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/*nav background on mobile devices */
+nav {
+  background: #599a68;
+}
+
+/*logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* links */
+a {
+  color: #36a968;
+}
+
+/*nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/*selected nav link */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
