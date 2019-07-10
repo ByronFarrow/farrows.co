@@ -25,6 +25,7 @@ The GRID
 body {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
+  justify-content: center;
 }
 
 p.byron {
