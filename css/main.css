@@ -34,9 +34,7 @@ The GRID
 
 .box {
   background-color: white;
-  color: DarkSlateGrey;
-  border-radius: 5px;
-  border: 2px solid;
+  color: DimGrey;
   display: flex;
   justify-content: center;
   align-items: center;;
