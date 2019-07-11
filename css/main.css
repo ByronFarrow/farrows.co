@@ -40,6 +40,7 @@ The GRID
   align-items: center;;
 }
 
+/*
 p.byron {
   grid-area: 1 / 1 / 2 / 2;
 }
@@ -55,6 +56,7 @@ p.edmund {
 p.iona {
   grid-area: 2 / 2 / 3 / 3;
 }
+*/
 
 
 /**********************************
