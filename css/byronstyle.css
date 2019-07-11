@@ -7,6 +7,77 @@ GENERAL
   padding: 0;
 }
 
+/**********************************
+GRID
+**********************************/
+
+.grid {
+  display: grid;
+  grid-template-areas:  "head head"
+                        "hero quote"
+                        "hero biobutt"
+                        "bio bio"
+                        "social social"
+                        "projphoto projphoto"
+                        "proj proj"
+                        "foot foot";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20vh 60vh 20vh 300px 100px 300px 300px 100px;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 50px;
+}
+
+.box {
+  background-color: white;
+  color: DimGrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+
+.headnav {
+  grid-area: head;
+}
+
+.photo {
+  grid-area: hero;
+}
+
+.pullquote {
+  grid-area: quote;
+}
+
+.biobuttons {
+  grid-area: biobutt;
+}
+
+.biography {
+  grid-area: bio;
+}
+
+.socialbuttons {
+  grid-area: social;
+}
+
+.projectphoto {
+  grid-area: projphoto;
+}
+
+.projects {
+  grid-area: proj
+}
+
+.foot {
+  grid-area: foot;
+}
+
+/**********************************
+OTHER
+**********************************/
+
+
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: CornflowerBlue;

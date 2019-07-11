@@ -23,7 +23,6 @@ The GRID
 **********************************/
 
 .grid {
-  border: 2px blue solid;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   justify-content: center;
