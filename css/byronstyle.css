@@ -2,15 +2,32 @@
 GENERAL
 **********************************/
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: CornflowerBlue;
+}
+
+h1 {
+  text-align: left;
 }
 
 a {
   text-decoration: none;
 }
 
-p {
-  color: DarkSlateGrey;
+.photo {
+  margin: 0 auto;
+}
+
+.bio {
+  color: Black;
+  border-radius: 5px;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 20px auto;
 }
