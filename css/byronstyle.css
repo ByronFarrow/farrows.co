@@ -2,16 +2,18 @@
 GENERAL
 **********************************/
 
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 /**********************************
 GRID
 **********************************/
 
 .grid {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-areas:  "head head"
                         "hero quote"
@@ -22,7 +24,7 @@ GRID
                         "proj proj"
                         "foot foot";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20vh 60vh 20vh 300px 100px 300px 300px 100px;
+  grid-template-rows: 10vh 65vh 25vh 300px 100px 300px 300px 100px;
   justify-content: center;
   width: 100%;
   height: 100vh;
@@ -37,21 +39,29 @@ GRID
 
 .headnav {
   grid-area: head;
+  justify-content: center;
 }
 
 .photo {
   grid-area: hero;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .pullquote {
   grid-area: quote;
   display: block;
-  padding: 4.44rem 0;
-  margin-bottom: 3.33rem;
-  border-top: 4px solid black;
-  border-bottom: 4px solid black;
-  text-align: center;
-  font-size: 3.55rem;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 50px;
+  /* margin-bottom: 3.33rem; */
+  /* border-top: 4px solid black;
+  border-bottom: 4px solid black; */
+  /* text-align: left; */
+  font-size: 2rem;
   font-weight: 800;
   line-height: 1.2;
 }
@@ -59,14 +69,42 @@ GRID
 
 .biobuttons {
   grid-area: biobutt;
+  display: flex;
+  justify-content:  space-evenly;
+}
+
+.button {
+  border-radius: 10px;
+  color: DimGrey;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  width: 200px;
+  padding: 20px;
+  margin: 40px auto;
+  border: 1px solid DimGrey;
+}
+
+.button:hover {
+  background-color: CornflowerBlue;
+  border: 1px solid CornflowerBlue;
+  color: #FFF;
 }
 
 .biography {
   grid-area: bio;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 50px;
 }
 
 .socialbuttons {
   grid-area: social;
+  display: flex;
+  justify-content:  space-evenly;
+
 }
 
 .projectphoto {
