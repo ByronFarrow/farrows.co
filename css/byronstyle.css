@@ -11,12 +11,28 @@ GENERAL
 GRID
 **********************************/
 
+/******
+HEADER VERSION:
+
+grid-template-areas:  "head head"
+                      "hero quote"
+                      "hero biobutt"
+                      "bio bio"
+                      "social social"
+                      "projphoto projphoto"
+                      "proj proj"
+                      "foot foot";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 10vh 65vh 25vh 300px 150px 100px 200px 100px;
+
+The no header version is that used below.
+******/
+
 .grid {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-areas:  "head head"
-                        "hero quote"
+  grid-template-areas:  "hero quote"
                         "hero biobutt"
                         "bio bio"
                         "social social"
@@ -24,23 +40,23 @@ GRID
                         "proj proj"
                         "foot foot";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10vh 65vh 25vh 300px 100px 300px 300px 100px;
+  grid-template-rows: 75vh 25vh 300px 150px 100px 200px 100px;
   justify-content: center;
   width: 100%;
   height: 100vh;
 }
 
 .box {
-  color: DimGrey;
+  color: DarkSlateGrey;
   display: flex;
   /* justify-content: center; */
   align-items: center;
 }
 
-.headnav {
+/* .headnav {
   grid-area: head;
   justify-content: center;
-}
+} */
 
 .photo {
   grid-area: hero;
@@ -75,14 +91,14 @@ GRID
 
 .button {
   border-radius: 10px;
-  color: DimGrey;
+  color: DarkSlateGrey;
   display: flex;
   justify-content: center;
   font-weight: 700;
   width: 200px;
   padding: 20px;
   margin: 40px auto;
-  border: 1px solid DimGrey;
+  border: 1px solid DarkSlateGrey;
 }
 
 .button:hover {
@@ -108,7 +124,7 @@ GRID
 
 .social-icon {
   width: 80px;
-  fill: DimGrey;
+  fill: DarkSlateGrey;
 }
 
 .social-icon:hover {
@@ -117,14 +133,38 @@ GRID
 
 .projectphoto {
   grid-area: projphoto;
+  display: block;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 50px;
+  border-top: 4px solid DarkSlateGrey;
+  font-weight: 800;
+  display: flex;
+  justify-content:  space-evenly;
 }
 
 .projects {
-  grid-area: proj
+  grid-area: proj;
+  display: flex;
+  justify-content:  space-evenly;
 }
 
 .foot {
   grid-area: foot;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  border-top: 4px solid DarkSlateGrey;
+  justify-content: space-between;
+}
+
+.footerContent {
+  display: block;
+  box-sizing: border-box;
+  margin: 20px;
 }
 
 
