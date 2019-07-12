@@ -104,7 +104,15 @@ GRID
   grid-area: social;
   display: flex;
   justify-content:  space-evenly;
+}
 
+.social-icon {
+  width: 80px;
+  fill: DimGrey;
+}
+
+.social-icon:hover {
+  fill: CornflowerBlue;
 }
 
 .projectphoto {
@@ -118,6 +126,8 @@ GRID
 .foot {
   grid-area: foot;
 }
+
+
 
 /**********************************
 OTHER
