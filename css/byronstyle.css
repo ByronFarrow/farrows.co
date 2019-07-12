@@ -45,7 +45,17 @@ GRID
 
 .pullquote {
   grid-area: quote;
+  display: block;
+  padding: 4.44rem 0;
+  margin-bottom: 3.33rem;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  text-align: center;
+  font-size: 3.55rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
+
 
 .biobuttons {
   grid-area: biobutt;
