@@ -12,27 +12,11 @@
   <body>
       <div class="grid">
         <div class="box" id="byron">
-          <a href="byron/index.html"><div class="word">Byron Farrow</div></a>
+          <a href="byron/index.html">Byron Farrow</a>
         </div>
         <div class="box" id="lina">Lina Tovar</div>
         <div class="box" id="edmund">Edmund Farrow</div>
         <div class="box" id="iona">Iona Farrow</div>
-      </div>  
+      </div>
   </body>
-
-  <script>
-  var elements = document.querySelectorAll ('.word');
-  for (var i = 0, l = elements.length; i < l; i++) {
-    var str = elements[i].textContent;
-    elements[i].innerHTML = '';
-    for (var j = 0, ll = str.length; j < ll; j++) {
-      var spn = document.createElement('span');
-      elements[i].appendChild(spn);
-      spn.textContent = str[j];
-      let pos = (j % 2) ? 'up' : 'down';
-      spn.classList.add(pos);
-    }
-  }
-  </script>
-
 </html>

@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: CornflowerBlue;
+}
+
 img {
   max-width: 100%;
 }
@@ -56,27 +60,3 @@ p.iona {
   grid-area: 2 / 2 / 3 / 3;
 }
 */
-
-
-/**********************************
-ROLLOVER EFFECT
-**********************************/
-
-.word .up {
-  display: inline-block;
-  transform: translate3d(0px, 0px, 0px)
-  rotate(0deg);
-  transition: all 0.5s ease-in-out;
-}
-
-.word:hover .up {
-  transform: translate3d(0px, -8px ,0px)
-  rotate(12deg);
-  color: rgb(23, 27, 138);
-}
-
-.word:hover .down {
-  transform: translate3d(0px, 8px ,0px)
-  rotate(-12deg);
-  color: rgb(23, 27, 138);
-}
