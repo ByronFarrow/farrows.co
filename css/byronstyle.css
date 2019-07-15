@@ -1,3 +1,4 @@
+
 /**********************************
 GENERAL
 **********************************/
@@ -47,7 +48,7 @@ The no header version is that used below.
 }
 
 .box {
-  color: DarkSlateGrey;
+  color: Black;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -84,10 +85,9 @@ The no header version is that used below.
   /* border-top: 4px solid black;
   border-bottom: 4px solid black; */
   /* text-align: left; */
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 800;
   line-height: 1.2;
-  overflow: scroll;
 }
 
 
@@ -95,18 +95,19 @@ The no header version is that used below.
   grid-area: biobutt;
   display: flex;
   justify-content:  space-evenly;
+
 }
 
 .button {
   border-radius: 10px;
-  color: DarkSlateGrey;
+  color: Black;
   display: flex;
   justify-content: center;
   font-weight: 700;
-  width: 25%; /* 200px*/
+  /* width: 25%; 200px*/
   padding: 2%; /* 20px*/
-  margin: 4% auto; /* 40px*/
-  border: 1px solid DarkSlateGrey;
+  margin: 4%; /* 40px*/
+  border: 1px solid Black;
 }
 
 .button:hover {
@@ -134,7 +135,7 @@ The no header version is that used below.
 
 .social-icon {
   width: 80px;
-  fill: DarkSlateGrey;
+  fill: Black;
 }
 
 .social-icon:hover {
@@ -150,7 +151,7 @@ The no header version is that used below.
   box-sizing: border-box;
   width: 100%;
   padding: 50px;
-  border-top: 4px solid DarkSlateGrey;
+  border-top: 4px solid Black;
   font-weight: 800;
   display: flex;
   justify-content:  space-evenly;
@@ -167,7 +168,7 @@ The no header version is that used below.
   text-decoration: none;
   display: flex;
   width: 100%;
-  border-top: 4px solid DarkSlateGrey;
+  border-top: 4px solid Black;
   justify-content: space-between;
 }
 
@@ -206,4 +207,276 @@ a {
   border: 3px solid black;
   padding: 10px;
   margin: 20px auto;
+}
+
+/**************
+MEDIA
+**************/
+
+
+@media only screen and (max-width: 1148px) {
+  .grid {
+    margin: 0;
+    padding: 0;
+    display: block; /* was grid */
+    /* grid-template-areas:  "hero"
+                          "quote"
+                          "biobutt"
+                          "bio"
+                          "social"
+                          "projphoto"
+                          "proj"
+                          "foot";
+    grid-template-columns: 1fr;
+    grid-template-rows: 60vh 40vh 100px 400px 100px 200px 100px; */
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .photo {
+    grid-area: hero;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #ByronProfilePic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+  }
+
+  .pullquote {
+    grid-area: quote;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    /* padding: 20%; 30px*/
+    margin-bottom: 3.33rem;
+    /* border-top: 4px solid black;
+    border-bottom: 4px solid black; */
+    /* text-align: left; */
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .pullquote h1 {
+    text-align: center;
+  }
+
+  .biobuttons {
+    grid-area: biobutt;
+    display: flex;
+    justify-content:  space-evenly;
+    margin: 20%;
+  }
+
+  .biography {
+    grid-area: bio;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10%;
+    margin: 10%;
+    max-height: 100%;
+    width: auto;
+  }
+
+  .socialbuttons {
+    grid-area: social;
+    display: flex;
+    justify-content:  space-evenly;
+    padding: 10%;
+    margin: 10%;
+  }
+
+  .social-icon {
+    width: 50px;
+    fill: Black;
+  }
+
+  .social-icon:hover {
+    fill: CornflowerBlue;
+  }
+
+  .projectphoto {
+    grid-area: projphoto;
+    display: block;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 10%;
+    margin: 10%;
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 4px solid Black;
+    font-weight: 800;
+    display: flex;
+    justify-content:  space-evenly;
+  }
+
+  .projects {
+    grid-area: proj;
+    display: flex;
+    justify-content:  space-evenly;
+    padding: 10%;
+    margin: 10%;
+  }
+
+  .foot {
+    grid-area: foot;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    border-top: 4px solid Black;
+    justify-content: space-between;
+    padding: 10%;
+    margin: 10%;
+  }
+
+  .footerContent {
+    display: block;
+    box-sizing: border-box;
+    margin: 10%;
+  }
+
+
+}
+
+@media only screen and (max-width: 771px) {
+  .grid {
+    margin: 0;
+    padding: 0;
+    display: block;
+    /* grid-template-areas:  "hero"
+                          "quote"
+                          "biobutt"
+                          "bio"
+                          "social"
+                          "projphoto"
+                          "proj"
+                          "foot";
+    grid-template-columns: 1fr;
+    grid-template-rows: 60vh 750px 150px 450px 600px 750px 900px; */
+ss
+    width: 100%;
+    height: 100vh;
+  }
+
+  .photo {
+    grid-area: hero;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #ByronProfilePic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+  }
+
+  .pullquote {
+    grid-area: quote;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    /* padding: 20%; 20px*/
+    margin-bottom: 1rem;
+    /* border-top: 4px solid black;
+    border-bottom: 4px solid black; */
+    /* text-align: left; */
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  .pullquote h1 {
+    text-align: center;
+  }
+
+  .biobuttons {
+    grid-area: biobutt;
+    display: flex;
+    justify-content:  space-evenly;
+    margin: 20%;
+  }
+
+  .biography {
+    grid-area: bio;
+    font-size: 1rem;
+    line-height: 1.1;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5%;
+    margin: 2%;
+    max-height: 100%;
+    width: auto;
+  }
+
+  .socialbuttons {
+    grid-area: social;
+    display: flex;
+    justify-content:  space-evenly;
+    padding: 5%;
+    margin: 2%;
+  }
+
+  .social-icon {
+    width: 30px;
+    fill: Black;
+  }
+
+  .social-icon:hover {
+    fill: CornflowerBlue;
+  }
+
+  .projectphoto {
+    grid-area: projphoto;
+    display: block;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 5%;
+    margin: 2%;
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 4px solid Black;
+    font-weight: 800;
+    display: flex;
+    justify-content:  space-evenly;
+  }
+
+  .projects {
+    grid-area: proj;
+    display: flex;
+    justify-content:  space-evenly;
+    padding: 10%;
+    margin: 10%;
+  }
+
+  .foot {
+    grid-area: foot;
+    text-decoration: none;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 4px solid Black;
+    justify-content: space-between;
+    padding: 10%;
+  }
+
+  .footerContent {
+    display: block;
+    box-sizing: border-box;
+    margin: 10%;
+  }
+
 }
