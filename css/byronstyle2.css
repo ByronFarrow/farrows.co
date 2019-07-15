@@ -1,0 +1,47 @@
+/*   TYPOGRAPHY
+     keep both headings and text DM Sans for now */
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif;
+}
+
+p, a {
+  font-family: 'DM Sans', sans-serif;;
+}
+
+
+/* GENERIC STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* STYLE FOR THE PHOTOQUOTE */
+
+.photoquote {
+  padding = 2rem;
+}
+
+.photoquote > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.photoquote > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+}
+
+.photoquote > ul > li > figure {
+  max-height: 100vh;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.photoquote > ul > li > figure > img {
+  width: 100%;
+}
