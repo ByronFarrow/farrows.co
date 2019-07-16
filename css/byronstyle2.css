@@ -10,6 +10,10 @@ p, a {
   font-family: 'DM Sans', sans-serif;;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* GENERIC STYLES */
 html {
@@ -18,25 +22,23 @@ html {
 
 li {
   list-style: none;
+  text-decoration: none;
 }
 
 
 /* STYLE FOR THE PHOTOQUOTE */
 
 .photoquote {
-  padding = 2rem;
+  padding: 2rem;
 }
 
 .photoquote > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
   grid-gap: 1rem;
+  align-items: center;
 }
 
-.photoquote > ul > li {
-  border: 1px solid #E2E2E2;
-  border-radius: .5rem;
-}
 
 .photoquote > ul > li > figure {
   max-height: 100vh;
@@ -48,4 +50,139 @@ li {
 
 .photoquote > ul > li > figure > img {
   width: 100%;
+}
+
+.photoquote > ul > li > aside > h1, p {
+  width: 100%;
+  line-height: 1.2;
+}
+
+.photoquote > ul > li > aside > h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.photoquote > ul > li > aside > p {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.biobuttons {
+  display: flex;
+  justify-content:  space-evenly;
+}
+
+.button {
+  border-radius: 10px;
+  color: Black;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  width: 25%; /* 200px*/
+  padding: 2%; /* 20px*/
+  margin: 4%; /* 40px*/
+  border: 1px solid Black;
+}
+
+.button:hover {
+  background-color: CornflowerBlue;
+  border: 1px solid CornflowerBlue;
+  color: #FFF;
+}
+
+.biography {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  margin: 2rem;
+  box-sizing: border-box;
+  padding-left: 40px;
+  min-width: 490px;
+  /* margin: 10%;
+  max-height: 100%;
+  width: auto; */
+}
+
+.biography > p {
+  padding: 2rem;
+}
+
+.social_buttons > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.social_buttons > ul > li {
+  display: flex;
+  justify-content:  space-evenly;
+}
+
+.social-icon {
+  width: 50px;
+  fill: Black;
+}
+
+.social-icon:hover {
+  fill: CornflowerBlue;
+}
+
+.projects_head {
+  display: flex;
+  font-size: 2rem;
+  line-height: 1.2;
+  width: 100%;
+  padding-top: 70px;
+  border-top: 4px solid Black;
+  justify-content:  space-evenly;
+}
+
+.projects > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.projects > ul > li {
+  display: flex;
+  justify-content:  space-evenly;
+}
+
+.projbutton {
+  border-radius: 10px;
+  color: Black;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  width: 50%; /* 200px*/
+  padding: 2%; /* 20px*/
+  margin: 4%; /* 40px*/
+  border: 1px solid Black;
+}
+
+.projbutton:hover {
+  background-color: Orange;
+  border: 1px solid Orange;
+  color: #FFF;
+}
+
+footer {
+  text-decoration: none;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 4px solid Black;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.footerContent {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
 }
