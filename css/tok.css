@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif;
+}
+
+p, a {
+  font-family: 'DM Sans', sans-serif;
+}
+
+a {
+  background-color: #87c8de;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+/* GENERIC STYLES */
+html {
+  scroll-behavior: smooth;
+  background-color: BurlyWood;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+/* Styles for the TOK image */
+.tok {
+  /* School of Athens by Raphael */
+  background: url('../tok/img/art-school-of-athens-1143741_1280.jpg') center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  /* grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+  align-items: center;
+}
+
+.tok > * {
+  color: White;
+  text-shadow: 2px 2px DarkSlateGrey;
+}
+
+.tok > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.tok > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.tok > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+/* topics styles */
+.topics {
+  padding: 2rem;
+}
+
+.topics > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.topics > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+}
+
+.topics > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.topics > ul > li > figure > img {
+  width: 100%;
+}
+
+.topics > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.topics > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.topics > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.topics > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+
+/* Footer style */
+
+footer {
+  font-family: 'DM Sans', sans-serif;
+  background-color: Black;
+  padding: .75rem;
+  color: White;
+  text-align: center;
+  font-size: .75rem;
+}
+
+footer > a {
+  a {
+    background-color: Black;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: all .3s;
+  }
+}
